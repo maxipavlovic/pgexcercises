@@ -41,4 +41,3 @@ if __name__ == '__main__':
     version_1()
     version_2()
     version_3()
-    version_3()

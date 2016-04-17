@@ -23,3 +23,31 @@ you create a structure that holds quotes and their associated attributions and t
 all of the quotes using the format in the example. An array of maps would be a good choice.
 '''
 
+
+def version_1():
+    quote = input('What is the quote? ')
+    name = input('Who said it? ')
+    print(name + ' says, "' + quote + '"')
+
+
+def version_2():
+    quote = {
+        'Obi-Wan Kenobi': [
+            "These aren't the droids you're looking for."
+        ],
+        'Any': [
+            "Hey",
+            "Ya"
+        ]
+    }
+    name = input('Who said the quote? ')
+    if name in quote:
+        for q in quote[name]:
+            print(name + ' says, "' + q + '"')
+    else:
+        print(name + ' says nothing.')
+
+
+if __name__ == '__main__':
+    version_1()
+    version_2()
